@@ -18,6 +18,7 @@ header {
 .header-left {
     display: flex;
     width: 50%;
+    padding-left: 100PX;
 }
 
 .header-left ul li {
@@ -50,7 +51,6 @@ header {
 .header-right ul {
     list-style: none;
     height: 100%;
-    text-align: right;
 }
 .header-right ul li {
     display: inline-block;
@@ -73,4 +73,22 @@ header {
     color: white;
     background: #EB008E;
     border-radius: 10px;
+}
+
+li.with-dropdown {
+  position: relative;
+}
+
+.dropdown {
+ display: none;
+ position: absolute;
+ padding: 30px 20px;
+ top: 100%;
+ width: 300px;
+ filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.3));
+ background: white;
+}
+
+a.dropdown-conti , a.dropdown-prod, a.dropdown-azienda{
+  display: inline-block;
 }
